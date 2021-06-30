@@ -1,14 +1,14 @@
 # 001-build-web-app
 
-First, we'll build a custom docker container and push it to a container registry. 
+We'll build a custom docker container. 
 
-This example uses Python and the Flask framework to expose a very simple "Hello, World!" endpoint. 
+This example uses Python and the Flask framework to expose a simple "Hello, World!" endpoint. 
 
 Review the contents of the `app/` dir and the `Dockerfile` for more information. 
 
 # Build the App
 
-1) Check that the app can run locally:
+1) Open a terminal window and check that the app can run locally:
 
 ```
 poetry install 
@@ -57,6 +57,6 @@ docker stop <CONTAINER_NAME>
 
 # What's Next
 
-You have successfully created a simple application which is packaged within a docker container. You have also been able to launch and test the container.
+You have successfully created a simple application which is packaged within a docker container. You have also been able to launch and test the container. Good job!
 
-Next, we'll launch the container on Kubernetes (k8s) - a container orchestration platform.
+Next, we'll launch the container on Kubernetes (k8s) - a container orchestration platform. Open up the README in Module 002 to learn more.
