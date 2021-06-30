@@ -6,7 +6,7 @@ This example uses Python and the Flask framework to expose a simple "Hello, Worl
 
 Review the contents of the `app/` dir and the `Dockerfile` for more information. 
 
-# Build the App
+## Build the App
 
 1) Open a terminal window and check that the app can run locally:
 
@@ -55,7 +55,7 @@ docker ps
 docker stop <CONTAINER_NAME>
 ```
 
-# What's Next
+## What's Next
 
 You have successfully created a simple application which is packaged within a docker container. You have also been able to launch and test the container. Good job!
 
