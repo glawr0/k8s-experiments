@@ -8,4 +8,11 @@ Once deployed, you'll refactor the application and add supporting services to ma
 
 This learning journey assumes a basic understanding of Python and the ability to use a Terminal.
 
+## Getting Started
 
+Clone this repository and open the README in Module 000-getting-started to get going!
+
+## Disclaimer
+
+This repo is provided as-is. I'm not an expert, but I hope this might help someone somewhere.
+If you have ideas, bug-fixes or questions, please just open a GitHub Issue. 
