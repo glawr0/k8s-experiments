@@ -59,4 +59,6 @@ docker stop <CONTAINER_NAME>
 
 You have successfully created a simple application which is packaged within a docker container. You have also been able to launch and test the container. Good job!
 
-Next, we'll launch the container on Kubernetes (k8s) - a container orchestration platform. Open up the README in Module 002 to learn more.
+Next, we'll launch the container on Kubernetes (k8s) - a container orchestration platform.
+
+Open up the README in Module 002 to learn more.
