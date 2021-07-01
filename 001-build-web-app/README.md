@@ -1,6 +1,6 @@
 # 001-build-web-app
 
-We'll build a custom docker container. 
+In this module we'll build a custom docker container and push it to DockerHub. 
 
 This example uses Python and the Flask framework to expose a simple "Hello, World!" endpoint. 
 
@@ -54,6 +54,14 @@ If you started the container as daemon, don't forget to stop the container:
 docker ps
 docker stop <CONTAINER_NAME>
 ```
+
+6) Finally, tag the image and push it to DockerHub.
+
+```
+docker tag web-app <YourDockerHubUsername>/web-app:v1
+docker push <YourDockerHubUsername>/web-app:v1
+```
+
 
 ## What's Next
 
