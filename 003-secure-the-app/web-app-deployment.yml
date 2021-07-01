@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-deployment
+  labels:
+    app: web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-app
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - name: caddy-sidecar
+        image: gedlawrenson/caddy-sidecar:v1
+        ports:
+        - containerPort: 443
+      - name: web-app
+        image: gedlawrenson/web-app:v1
+        ports:
+        - containerPort: 8080

@@ -89,6 +89,16 @@ web-app-service   LoadBalancer   10.98.3.15   localhost     80:32386/TCP   4s
 curl http://localhost:80/
 ```
 
+## Cleanup 
+
+1) Cleanup the resources you've created by running:
+
+```
+kubectl delete -f web-app-service.yml
+kubectl delete -f web-app-deployment.yml
+```
+
+
 ## What's Next?
 
 You've successfully deployed an application to Kubernetes and configured a simple loadbalancer to route external traffic to the app. Pat yourself on the back!
