@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: gedlawrenson/web-app:v1
+        image: gedlawrenson/web-app:v1.1
         ports:
         - containerPort: 8080

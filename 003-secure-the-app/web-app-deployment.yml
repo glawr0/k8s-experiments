@@ -20,6 +20,6 @@ spec:
         ports:
         - containerPort: 443
       - name: web-app
-        image: gedlawrenson/web-app:v1
+        image: gedlawrenson/web-app:v1.1
         ports:
         - containerPort: 8080
