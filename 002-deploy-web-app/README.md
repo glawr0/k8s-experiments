@@ -43,6 +43,7 @@ CoreDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/
 1) Create a Kubernetes Deployment for the web-app. Review the `web-app-deployment.yml` file. This file will create a ReplicaSet containing three replicas. Three Pods will be created which will run the `<YourDockerHubUsername>/web-app:v1` image. 
 
 ```
+cd 002-deploy-web-app/
 kubectl apply -f web-app-deployment.yml
 ```
 

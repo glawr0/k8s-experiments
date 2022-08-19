@@ -6,11 +6,21 @@ This example uses Python and the Flask framework to expose a simple "Hello, Worl
 
 Review the contents of the `app/` dir and the `Dockerfile` for more information. 
 
+## Install Poetry
+
+1) Run a random script off the internet :-)...
+
+```
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
 ## Build the App
 
 1) Open a terminal window and check that the app can run locally:
 
 ```
+export PATH="/root/.local/bin:$PATH"
+cd 001-build-web-app/app/
 poetry install 
 poetry run gunicorn --bind=localhost:8080 wsgi:app 
 curl http://localhost:8080/ 
@@ -19,6 +29,7 @@ curl http://localhost:8080/
 2) Build the docker image:
 
 ```
+cd ..
 docker build -t web-app .
 ```
 
@@ -48,12 +59,6 @@ docker run -d -p 8080:8080 web-app
 curl http://localhost:8080/
 ```
 
-If you started the container as daemon, don't forget to stop the container:
-
-```
-docker ps
-docker stop <CONTAINER_NAME>
-```
 
 6) Finally, tag the image and push it to DockerHub.
 
