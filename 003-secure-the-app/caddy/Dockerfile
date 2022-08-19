@@ -1,4 +1,4 @@
-FROM caddy:2.4.3-alpine
+FROM caddy:2.5.2-alpine
 
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY index.html /etc/caddy/static/index.html
+COPY static/ /etc/caddy/static/

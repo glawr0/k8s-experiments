@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.11-rc-slim
 
 RUN pip install poetry>=1.0.0
 COPY app/ app/
