@@ -55,7 +55,7 @@ curl -k https://localhost/
 ```
 
 The first command should return "Hello, from Caddy!".
-The second command should retunr "Hello, World!". 
+The second command should return "Hello, World!". 
 
 What is happening is that the Service finds the Pod(s) matching the specified selector label (web-app) and routes traffic on Port 443. 
 The traffic on Port 443 is recieved by the caddy-sidecar (which is listening on 443). 
